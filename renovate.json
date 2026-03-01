@@ -4,10 +4,17 @@
   "enabledManagers": ["gomod", "tekton"],
   "packageRules": [
     {
+      "description": "Ignore other Go deps except packages below",
+      "matchDatasource": ["go"],
+      "enabled": false
+    },
+    {
       "description": "Group PRs that update Hive APIs as Hive API Synchronization",
       "matchPackageNames": ["github.com/openshift/hive/apis"],
       "groupName": "Hive API Synchronization",
-      "prTitle": "Hive API Synchronization"
+      "prTitle": "Hive API Synchronization",
+      "prPriority": 10,
+      "enabled": true
     }
   ]
 }
