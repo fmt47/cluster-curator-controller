@@ -5,7 +5,7 @@
   "packageRules": [
     {
       "description": "Ignore other Go deps except packages below",
-      "matchDatasource": ["go"],
+      "matchDatasources": ["go"],
       "enabled": false
     },
     {
