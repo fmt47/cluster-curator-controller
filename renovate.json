@@ -12,7 +12,7 @@
       "description": "Group PRs that update Hive APIs as Hive API Synchronization",
       "matchPackageNames": ["github.com/openshift/hive/apis"],
       "groupName": "Hive API Synchronization",
-      "prTitle": "Hive API Synchronization",
+      "commitMessageTopic": "Hive API Synchronization",
       "prPriority": 10,
       "enabled": true
     }
