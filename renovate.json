@@ -1,9 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "enabledManagers": ["gomod", "tekton"],
   "forkProcessing": "enabled",
   "prHourlyLimit": 5,
   "postUpdateOptions": ["gomodTidy"],
-  "enabledManagers": ["gomod", "tekton"],
   "packageRules": [
     {
       "description": "Ignore other Go deps except packages below",
@@ -11,11 +11,8 @@
       "enabled": false
     },
     {
-      "description": "Group PRs that update Hive APIs as Hive API Synchronization",
+      "description": "Enable Hive APIs updates",
       "matchPackageNames": ["github.com/openshift/hive/apis"],
-      "groupName": "Hive API Synchronization",
-      "commitMessageTopic": "Hive API Synchronization",
-      "prPriority": 10,
       "enabled": true
     }
   ]
