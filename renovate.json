@@ -6,7 +6,7 @@
     ":gitSignOff",
     ":disableDependencyDashboard"
   ],
-  "baseBranches": ["main"],
+  "baseBranchPatterns": ["main"],
   "schedule": ["before 6am on Monday"],
   "forkProcessing": "enabled",
   "gomod": {
