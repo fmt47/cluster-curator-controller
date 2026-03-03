@@ -7,7 +7,7 @@
     ":disableDependencyDashboard"
   ],
   "baseBranches": ["main"],
-  "schedule": ["every day"],
+  "schedule": ["* * * * *"],
   "forkProcessing": "enabled",
   "gomod": {
     "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"],
